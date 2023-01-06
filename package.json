@@ -2,7 +2,8 @@
   "name": "watermelon-expo-test",
   "version": "1.0.0",
   "scripts": {
-    "build:android:development": "eas build --profile development --platform android",
+    "build:android:dev": "eas build --profile development --platform android",
+    "build:ios:dev": "eas build --profile development-simulator --platform ios",
     "start": "expo start --dev-client",
     "start:android": "expo start --android",
     "start:ios": "expo start --ios",
