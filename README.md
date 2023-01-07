@@ -1,19 +1,22 @@
 # watermelon-expo-test
 
-## Usage
+## Development
 
-To create a development build for Android or iOS:
+These are the instructions for building and running a development build for
+Android and iOS. Replace `android` for `ios` where necessary.
+
+First create a development build:
 
 ```
 npm run build:android:dev
 ```
 
-```
-npm run build:ios:dev
-```
+You can also build it locally (if you have Android Studio, and the SDK and NDK
+installed):
 
-Then, download the apk from EAS. You can also pass `-- --local` to build it
-locally (you will need Android Studio, Android 12 SDK, NDK etc.)
+```
+npm run build:android:dev -- --local
+```
 
 Finally, start the Android server:
 
