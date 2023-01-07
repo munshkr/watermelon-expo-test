@@ -252,6 +252,10 @@ android {
 
         }
     }
+
+    packagingOptions {
+        pickFirst '**/libc++_shared.so'
+    }
 }
 
 // Apply static values from `gradle.properties` to the `android.packagingOptions`
@@ -325,6 +329,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation project(':watermelondb-jsi')
 }
 
 if (isNewArchitectureEnabled()) {
